@@ -5,7 +5,7 @@ import { Component } from "@angular/core";
     templateUrl: './contador.component.html'
 })
 
-export class ContadorComponent {
+export class ContadorNumericoComponent {
     public title: String = 'Contador App';
     /* public numero: number = 10; */
     public base: number = 5;
