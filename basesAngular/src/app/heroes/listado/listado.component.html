@@ -1,0 +1,30 @@
+<div class="container">
+    <!--ngfor se utiliza para duplicar codigo-->
+    <!--ngif se utiliza para bloquear o desbloquear un bloque de codigo-->
+
+    <h1>listado de heroes</h1>
+    <br>
+
+    <div *ngIf="heroeBorrado; else noBorrado">
+        <h2>
+            Heroe borrado: <strong>{{heroeBorrado}}</strong>
+        </h2>
+    </div>
+
+    <ng-template #noBorrado>
+        <h2>
+            No ha borrado nada
+        </h2>
+    </ng-template>
+    <br>
+    <button (click)="borrarHeroe()">
+        Borrar
+    </button>
+    <br> <br>
+    <ul>
+        <li *ngFor="let heroe of heroes; let i = index;">
+            {{i + 1}} - {{heroe}}
+        </li>
+    </ul>
+
+</div>
