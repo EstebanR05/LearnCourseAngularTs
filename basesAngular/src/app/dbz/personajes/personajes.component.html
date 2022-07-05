@@ -1,0 +1,7 @@
+<h3>Personajes</h3>
+<hr>
+<ul>
+    <li *ngFor="let listadito of listaPersonajes; let init = index;">
+        {{init + 1}} - {{listadito.nombre}} - {{listadito.poder}}
+    </li>
+</ul>

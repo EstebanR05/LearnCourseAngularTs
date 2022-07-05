@@ -4,25 +4,11 @@
 
     <div class="row">
         <div class="col">
-            <h3>Personajes</h3>
-            <hr>
-            <ul>
-                <li *ngFor="let listadito of listaPersonajes; let init = index;">
-                    {{init + 1}} - {{listadito.nombre}} - {{listadito.poder}}
-                </li>
-            </ul>
+            <app-personajes [listaPersonajes]="listaPersonajes"></app-personajes>
         </div>
 
         <div class="col">
-            <h3>Agregar</h3>
-            <hr>
-            <form (ngSubmit)="agregarPersonaje()">
-                <input type="text" placeholder="Nombre" name="Nombre" [(ngModel)]="nuevo.nombre">
-                <br><br>
-                <input type="text" placeholder="Poder" name="poder" [(ngModel)]="nuevo.poder">
-                <br><br>
-                <button type="text"> Agregar Personaje</button>
-            </form>
+            <app-agregar-personaje [listaPersonajes]="listaPersonajes"></app-agregar-personaje>
         </div>
 
     </div>
