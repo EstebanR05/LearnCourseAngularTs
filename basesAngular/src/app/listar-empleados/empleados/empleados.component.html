@@ -1,0 +1,40 @@
+<div class="container">
+    <hr>
+        <h1>Lista de empleados</h1>
+    <hr>
+    <div class="row">
+       <div class="col">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">apellido</th>
+                <th scope="col">correo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let empleado of empleados; let i = index">
+                <th scope="row">{{i + 1}}</th>
+                <td>{{empleado.nombre}}</td>
+                <td>{{empleado.apellido}}</td>
+                <td>{{empleado.email}}</td>
+              </tr>
+            </tbody>
+          </table>
+       </div>
+       <div class="col">
+        <h3>Agregar</h3>
+            <hr>
+            <form (ngSubmit)="agregarEmpleado()">
+                <input type="text" placeholder="Nombre" name="Nombre" [(ngModel)]="nuevosEmpleados.nombre">
+                <br><br>
+                <input type="text" placeholder="Apellido" name="Apellido" [(ngModel)]="nuevosEmpleados.apellido">
+                <br><br>
+                <input type="text" placeholder="Email" name="Email" [(ngModel)]="nuevosEmpleados.email">
+                <br><br>
+                <button type="submit"> Agregar Empleado</button>
+            </form>
+       </div>
+    </div>
+</div>
