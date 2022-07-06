@@ -1,0 +1,16 @@
+<div class="card-header">
+    <h2>FORMULARIO ESTUDIANTE</h2>
+</div>
+<div class="card-body">
+    <form (ngSubmit)="agregar()">
+        <input type="text" placeholder="Nombre" name="Nombre" [(ngModel)]="nuevoEstudiante.nombre">
+        <br><br>
+        <input type="text" placeholder="Apellido" name="Apellido" [(ngModel)]="nuevoEstudiante.apellido">
+        <br><br>
+        <input type="text" placeholder="Grado" name="Grado" [(ngModel)]="nuevoEstudiante.grado">
+        <br><br>
+        <input type="text" placeholder="Email" name="Email" [(ngModel)]="nuevoEstudiante.email">
+        <br><br>
+        <button type="submit">Enviar Datos</button>
+    </form>
+</div>

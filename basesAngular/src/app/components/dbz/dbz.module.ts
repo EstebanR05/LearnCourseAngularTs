@@ -6,22 +6,21 @@ import { PersonajesComponent } from './personajes/personajes.component';
 import { AgregarPersonajeComponent } from './agregar-personaje/agregar-personaje.component';
 import { DbzService } from './services/dbz.service';
 
-
 @NgModule({
   declarations: [
     MainPageComponent,
     PersonajesComponent,
-    AgregarPersonajeComponent
+    AgregarPersonajeComponent,
   ],
   exports:[
     MainPageComponent,
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
   ],
   providers:[
-    DbzService
+    DbzService,
   ]
 })
 

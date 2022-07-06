@@ -1,0 +1,12 @@
+<div class="container p-5">
+    <!--LISTA DE ESTUDIANTES-->
+    <div class="card">
+        <app-list-students [estudiantes]="estudiantes"></app-list-students>
+    </div>
+    <br><br>
+    <!--formulario estudiante-->
+    <div class="card">
+        <app-create-students [nuevoEstudiante]="nuevoEstudiante" (onNuevoEstudiante)="agregarNuevoEstudiante( $event)"></app-create-students>
+    </div>
+
+</div>
