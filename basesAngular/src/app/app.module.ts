@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { ContadorModule } from './contador/contador.module';
 import { DbzModule } from './dbz/dbz.module';
 import { HeroesModule } from './heroes/heroes.module';
-import { ListarEmpleadosModule } from './listar-empleados/listar-empleados.module';
+import { EmpleadosModule } from './listar-empleados/empleados.module';
 
 
 
@@ -18,8 +18,7 @@ import { ListarEmpleadosModule } from './listar-empleados/listar-empleados.modul
     HeroesModule,
     ContadorModule,
     DbzModule,
-    ListarEmpleadosModule
-
+    EmpleadosModule
   ],
   providers: [],
   bootstrap: [AppComponent]

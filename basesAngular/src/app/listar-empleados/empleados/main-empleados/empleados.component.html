@@ -1,0 +1,13 @@
+<div class="container">
+    <hr>
+        <h1>Lista de empleados</h1>
+    <hr>
+    <div class="row">
+       <div class="col">
+        <app-listarEmpleado [empleados]="empleados"></app-listarEmpleado>
+       </div>
+       <div class="col">
+        <app-agregarEmpleado [nuevosEmpleados]="nuevosEmpleados" (onNuevosEmpleados)="agregarEmpleadosNuevos( $event)"></app-agregarEmpleado>
+       </div>
+    </div>
+</div>
