@@ -9,22 +9,22 @@ export class SeleccionStudentsComponent {
 
   public estudiantes: estudiante[] = [
     {
-      nombre: 'kenji',
-      apellido: "sandoval",
-      grado: 11,
-      email: '21212@gmail.com',
+      nombre: 'isaac',
+      apellido: "restrepo",
+      grado: 8,
+      email: 'ir01092008@gmail.com',
     },
     {
       nombre: 'geraldine',
       apellido: "perez",
-      grado: 12,
-      email: '1232131232423@gmail.com',
+      grado: 11,
+      email: 'erp05072003@gmail.com',
     },
     {
       nombre: 'rosalba',
       apellido: "patarroyo",
       grado: 10,
-      email: 'rosyta@gmail.com',
+      email: 'rosyencristo80@gmail.com',
     }
   ];
 

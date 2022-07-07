@@ -5,7 +5,7 @@ import { ContadorModule } from './components/contador/contador.module';
 import { DbzModule } from './components/dbz/dbz.module';
 import { HeroesModule } from './components/heroes/heroes.module';
 import { EmpleadosModule } from './components/listar-empleados/empleados.module';
-import { StudentsModule } from './students/students.module';
+import { StudentsModule } from './components/students/students.module';
 
 
 
