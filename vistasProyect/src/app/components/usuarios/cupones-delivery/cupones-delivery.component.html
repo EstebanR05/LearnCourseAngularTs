@@ -1,8 +1,8 @@
-<div class="container p-3">
+<div class="container">
 
-    <div class="d-flex justify-content-end">
+    <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-end">
         <div class="btn-group">
-            <button class="btn btn-success btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            <button class="btn2 btn-sm  btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Tipo de cupon
             </button>
@@ -10,8 +10,9 @@
                 ...
             </ul>
         </div>
+
         <div class="btn-group">
-            <button class="btn btn-success btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            <button class="btn2 btn-sm btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 categoria
             </button>
@@ -19,12 +20,43 @@
                 ...
             </ul>
         </div>
-        <div class="d-flex justify-content-end">
-            <button type="button" class="btn btn-secondary btn-sm  p-2 bd-highlight" id="btn-5">Crear cupon</button>
-         </div> 
+
+        <div class="btn-group">
+            <button type="button" class="btn1 btn-light btn-sm " data-bs-toggle="button">Crear cupon</button>
+        </div>
+
+    </div> -->
+
+    <div class="d-flex flex-row-reverse bd-highlight">
+        <div class="btn-group">
+            <button type="button" class="btn1 btn-light btn-sm " data-bs-toggle="button">Crear cupon</button>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn2 btn-sm btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                categoria
+            </button>
+            <ul class="dropdown-menu">
+                ...
+            </ul>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn2 btn-sm  btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Tipo de cupon
+            </button>
+            <ul class="dropdown-menu">
+                ...
+            </ul>
+        </div>
+            
     </div>
 
-    <h6>Cupones Delivery</h6>
+    <div class="textTop">
+        <h6>Cupones Delivery</h6>
+    </div>
 
     <div class="card">
         <div class="card-body">
@@ -47,9 +79,14 @@
                         <td>{{dato.Duracion}}</td>
                         <td>{{dato.Categoria}}</td>
                         <td>{{dato.Cantidad}}</td>
-                        <td>...</td>
+                        <div class="flex-container">
+                            <div class="points">
+                                <td>...</td>
+                            </div>
+                        </div>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
+</div>
