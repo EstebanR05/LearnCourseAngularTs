@@ -1,0 +1,71 @@
+<div class="container p-3">
+
+    <div class="d-flex justify-content-end">
+        <div class="btn-group">
+            <button class="btn btn-success btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Filtrar por ubicacion
+            </button>
+            <ul class="dropdown-menu">
+                ...
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button class="btn btn-success btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Filtrar por genero
+            </button>
+            <ul class="dropdown-menu">
+                ...
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button class="btn btn-success btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Filtrar por periodo
+            </button>
+            <ul class="dropdown-menu">
+                ...
+            </ul>
+        </div>
+        
+        <div class="btn-group">
+            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Filtrar por nivel
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <h6>Usuarios</h6>
+    <div class="card">
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Nivel</th>
+                        <th>Correo</th>
+                        <th>Telefono</th>
+                        <th>Ubicaciones</th>
+                        <th></th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let users of usuarios">
+                        <td>{{users.nombre}}</td>
+                        <td>{{users.nivel}}</td>
+                        <td>{{users.correo}}</td>
+                        <td>{{users.telefono}}</td>
+                        <td>{{users.ubicacion}}</td>
+                        <a href="#">
+                            <td>ver historial</td>
+                        </a>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>

@@ -4,6 +4,7 @@ import { CrearUsuarioComponent } from './crear-usuario/crear-usuario.component';
 import { FormsModule } from '@angular/forms';
 import { EditarCategoriaComponent } from './editar-categoria/editar-categoria.component';
 import { SucursalesComponent } from './sucursales/sucursales.component';
+import { UsersComponent } from './users/users.component';
 
 
 
@@ -12,11 +13,13 @@ import { SucursalesComponent } from './sucursales/sucursales.component';
     CrearUsuarioComponent,
     EditarCategoriaComponent,
     SucursalesComponent,
+    UsersComponent,
   ],
   exports:[
     CrearUsuarioComponent,
     EditarCategoriaComponent,
     SucursalesComponent,
+    UsersComponent,
   ],
   imports: [
     CommonModule,
