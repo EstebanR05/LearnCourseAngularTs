@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { EditarCategoriaComponent } from './editar-categoria/editar-categoria.component';
 import { SucursalesComponent } from './sucursales/sucursales.component';
 import { UsersComponent } from './users/users.component';
+import { CuponesDeliveryComponent } from './cupones-delivery/cupones-delivery.component';
 
 
 
@@ -14,12 +15,14 @@ import { UsersComponent } from './users/users.component';
     EditarCategoriaComponent,
     SucursalesComponent,
     UsersComponent,
+    CuponesDeliveryComponent,
   ],
   exports:[
     CrearUsuarioComponent,
     EditarCategoriaComponent,
     SucursalesComponent,
     UsersComponent,
+    CuponesDeliveryComponent,
   ],
   imports: [
     CommonModule,

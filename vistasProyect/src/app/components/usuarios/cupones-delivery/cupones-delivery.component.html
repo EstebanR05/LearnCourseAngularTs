@@ -1,0 +1,55 @@
+<div class="container p-3">
+
+    <div class="d-flex justify-content-end">
+        <div class="btn-group">
+            <button class="btn btn-success btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Tipo de cupon
+            </button>
+            <ul class="dropdown-menu">
+                ...
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button class="btn btn-success btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                categoria
+            </button>
+            <ul class="dropdown-menu">
+                ...
+            </ul>
+        </div>
+        <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-secondary btn-sm  p-2 bd-highlight" id="btn-5">Crear cupon</button>
+         </div> 
+    </div>
+
+    <h6>Cupones Delivery</h6>
+
+    <div class="card">
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Tipo de cupon</th>
+                        <th>Titulo</th>
+                        <th>Duracion</th>
+                        <th>Categoria</th>
+                        <th>Cantidad</th>
+                        <th></th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let dato of datosTabla">
+                        <td></td>
+                        <td>{{dato.TipoDeCupon}}</td>
+                        <td>{{dato.Titulo}}</td>
+                        <td>{{dato.Duracion}}</td>
+                        <td>{{dato.Categoria}}</td>
+                        <td>{{dato.Cantidad}}</td>
+                        <td>...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
