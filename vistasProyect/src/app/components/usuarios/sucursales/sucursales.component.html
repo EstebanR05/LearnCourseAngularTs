@@ -1,1 +1,30 @@
-<p>sucursales works!</p>
+<div class="container p-3">
+
+    <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-success btn-sm  p-2 bd-highlight" id="btn-5">Crear Usuario</button>
+    </div>
+    <h6>Sucursales</h6>
+    <div class="card">
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Contraseña</th>
+                        <th>Rol</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let datos of datosPersonas">
+                        <td>{{datos.nombre}}</td>
+                        <td>{{datos.correo}}</td>
+                        <td>{{datos.contrasena}}</td>
+                        <td>{{datos.rol}}</td>
+                        <a href="#"><td>Editar</td></a>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
