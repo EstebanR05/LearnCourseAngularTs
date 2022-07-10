@@ -1,24 +1,21 @@
-.textTop{
+.textTop {
     color: blueviolet;
 }
 
-.points{
+.points {
     color: #f71577;
     font-size: 200%;
 }
-.d-flex{
-    padding: -10%;
-    margin: 3%;
-}
-.btn1{
+
+.btn1 {
     background-color: blueviolet;
     text-align: center;
     border-radius: 10%;
-    /* border: solid blueviolet; */
+    color: white;
 }
 
-.btn2{
+.btn2 {
     background: #f71577;
     border-radius: 10%;
-    /* border: solid #f71577; */
+    color: white;
 }

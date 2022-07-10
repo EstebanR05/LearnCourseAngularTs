@@ -1,9 +1,12 @@
 <div class="container p-3">
 
     <div class="d-flex justify-content-end">
-        <button type="button" class="btn btn-success btn-sm  p-2 bd-highlight" id="btn-5">Crear Usuario</button>
+        <button type="button" class="btnCreate btn-light btn-sm  p-2 bd-highlight" id="btn-5">Crear Usuario</button>
     </div>
-    <h6>Sucursales</h6>
+    <div class="textTop">
+        <h6>Sucursales</h6>
+    </div>
+    
     <div class="card">
         <div class="card-body">
             <table class="table">
@@ -22,7 +25,9 @@
                         <td>{{datos.correo}}</td>
                         <td>{{datos.contrasena}}</td>
                         <td>{{datos.rol}}</td>
-                        <a href="#"><td>Editar</td></a>
+                        <div class="edit">
+                            <a href="#" class="edit"><td >Editar</td></a>
+                        </div>
                     </tr>
                 </tbody>
             </table>

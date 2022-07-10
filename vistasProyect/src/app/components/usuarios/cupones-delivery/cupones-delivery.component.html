@@ -1,32 +1,5 @@
 <div class="container">
 
-    <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-        <div class="btn-group">
-            <button class="btn2 btn-sm  btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Tipo de cupon
-            </button>
-            <ul class="dropdown-menu">
-                ...
-            </ul>
-        </div>
-
-        <div class="btn-group">
-            <button class="btn2 btn-sm btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                categoria
-            </button>
-            <ul class="dropdown-menu">
-                ...
-            </ul>
-        </div>
-
-        <div class="btn-group">
-            <button type="button" class="btn1 btn-light btn-sm " data-bs-toggle="button">Crear cupon</button>
-        </div>
-
-    </div> -->
-
     <div class="d-flex flex-row-reverse bd-highlight">
         <div class="btn-group">
             <button type="button" class="btn1 btn-light btn-sm " data-bs-toggle="button">Crear cupon</button>
@@ -38,7 +11,8 @@
                 categoria
             </button>
             <ul class="dropdown-menu">
-                ...
+                <li>hola</li>
+                <li>mundo</li>
             </ul>
         </div>
 
@@ -48,10 +22,11 @@
                 Tipo de cupon
             </button>
             <ul class="dropdown-menu">
-                ...
+                <li>hola</li>
+                <li>mundo</li>
             </ul>
         </div>
-            
+           
     </div>
 
     <div class="textTop">
@@ -69,11 +44,13 @@
                         <th>Duracion</th>
                         <th>Categoria</th>
                         <th>Cantidad</th>
-                        <th></th>
+                        <div class="points">
+                            <td>...</td>
+                        </div>
                 </thead>
                 <tbody>
                     <tr *ngFor="let dato of datosTabla">
-                        <td></td>
+                        <td><img src="assets/image-logo-comida2.png"></td>
                         <td>{{dato.TipoDeCupon}}</td>
                         <td>{{dato.Titulo}}</td>
                         <td>{{dato.Duracion}}</td>

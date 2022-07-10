@@ -2,7 +2,7 @@
 
     <div class="d-flex justify-content-end">
         <div class="btn-group">
-            <button class="btn btn-success btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Filtrar por ubicacion
             </button>
@@ -11,7 +11,7 @@
             </ul>
         </div>
         <div class="btn-group">
-            <button class="btn btn-success btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Filtrar por genero
             </button>
@@ -20,7 +20,7 @@
             </ul>
         </div>
         <div class="btn-group">
-            <button class="btn btn-success btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Filtrar por periodo
             </button>
@@ -30,7 +30,7 @@
         </div>
         
         <div class="btn-group">
-            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 Filtrar por nivel
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -41,7 +41,11 @@
         </div>
 
     </div>
-    <h6>Usuarios</h6>
+
+    <div class="textTop">
+        <h6>Usuarios</h6>
+    </div>
+    
     <div class="card">
         <div class="card-body">
             <table class="table">
@@ -61,7 +65,7 @@
                         <td>{{users.correo}}</td>
                         <td>{{users.telefono}}</td>
                         <td>{{users.ubicacion}}</td>
-                        <a href="#">
+                        <a href="#" class="LinkVer">
                             <td>ver historial</td>
                         </a>
                     </tr>
